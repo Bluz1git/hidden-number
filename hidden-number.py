@@ -1,12 +1,12 @@
 import random
 
 def tro_choi_doan_so():
-    so_bi_mat = random.randint(1, 10)
+    so_bi_mat = random.randint(1, 20)
     so_luot_choi = 0
-    gioi_han = 7
+    gioi_han = 5
 
     print("--- CHÀO MỪNG ĐẾN VỚI GAME ĐOÁN SỐ ---")
-    print(f"\nBạn có {gioi_han} lượt đoán nhé!")
+    print(f"\nGiới hạn trò chơi chỉ nằm trong 1-20. Bạn có {gioi_han} lượt đoán nhé!")
 
     while so_luot_choi < gioi_han:
         try:
@@ -33,7 +33,6 @@ def tro_choi_doan_so():
     
     if du_doan != so_bi_mat:
         print(f"\nGame Over! Số bí mật là: {so_bi_mat}")
-
-    input("\nNhấn phím bất kỳ để thoát game...")        
+    input("\nNhấn phím bất kỳ để thoát game...")
 
 tro_choi_doan_so()
